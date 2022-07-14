@@ -1,13 +1,35 @@
-.main{
-    padding:2rem 4rem;
-}
-
 .welcome-text{
-    color:#E4E4E4;
     justify-content: center;
 }
 
 .name{
     font-weight: 600;
     font-size: 4rem;
+}
+
+.skills-icons > div{
+    cursor: pointer;
+}
+
+.skills-icons > div > img{
+    cursor: pointer;
+}
+
+.skills-icons > div > img:hover{
+    filter: brightness(75%);
+}
+
+.mail{
+    display:flex;
+    color:#E4E4E4 !important;
+    font-size:1rem;
+    width:fit-content
+}
+
+.mail:hover{
+    filter: brightness(75%);
+}
+
+.gotoprojects-btn{
+    margin-top:2rem;
 }

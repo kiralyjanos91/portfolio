@@ -1,20 +1,29 @@
-.App{
-  background: linear-gradient(-45deg, #53325f, #2f3d70, #396164, #2b5334);
+body {
+	margin: 0;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	  sans-serif;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(-45deg, #432033, #281f49, #24583d, #2d516c);
 	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
-	height: 100vh;
+	animation: gradient 15s ease infinite;
+	height: 100%;
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-
-}
+	color: #E4E4E4 !important;
+  }
+  
+  @keyframes gradient {
+  0% {
+	background-position: 0% 50%;
+  }
+  50% {
+	background-position: 100% 50%;
+  }
+  100% {
+	background-position: 0% 50%;
+  }
+  
+  }
