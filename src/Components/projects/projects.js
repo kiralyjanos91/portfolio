@@ -14,7 +14,7 @@ const animationStages = {
         opacity:1,
         transition:{
             duration:0.75
-        },
+        }
     }
 }
 
@@ -34,7 +34,9 @@ export default function Projects(){
                     </Col>
                 </Row>   
                 <Project
-                    img={DummyProject}
+                    img1={DummyProject}
+                    img2={DummyProject}
+                    img3={DummyProject}
                     title="Project 1"
                     description="project 1 description project 1 description project 1 description
                     project 1 descriptionproject 1 descriptionproject 1 description
@@ -43,7 +45,9 @@ export default function Projects(){
                 />
                 <hr/>
                 <Project
-                    img={DummyProject}
+                    img1={DummyProject}
+                    img2={DummyProject}
+                    img3={DummyProject}
                     imgOrder="last"
                     title="Project 2"
                     description="project 1 description project 1 description project 1 description
@@ -53,7 +57,9 @@ export default function Projects(){
                 />
                 <hr/>
                 <Project
-                    img={DummyProject}
+                    img1={DummyProject}
+                    img2={DummyProject}
+                    img3={DummyProject}
                     title="Project 3"
                     description="project 1 description project 1 description project 1 description
                     project 1 descriptionproject 1 descriptionproject 1 description

@@ -11,8 +11,9 @@
     margin-bottom:3rem;
 }
 
-.project-image{
+.project-carousel{
     margin-bottom:1.5rem;
+    cursor: pointer;
 }
 
 .project-description{
@@ -20,9 +21,13 @@
 }
 
 .project-buttons{
-    gap:10px
+    gap:10px;
 }
 
 .gobackbutton{
     margin-top:1rem;
+}
+
+.modal-content{
+    color:black
 }
