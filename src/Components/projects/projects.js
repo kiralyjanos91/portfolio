@@ -1,10 +1,10 @@
-import React from "react"
-import {useNavigate} from "react-router-dom"
-import { Row, Col, Container, Button } from "react-bootstrap"
-import "./projects.css"
-import DummyProject from "../../images/projectdummy.png"
-import Project from "./project"
-import { motion } from "framer-motion"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Row, Col, Container, Button } from "react-bootstrap";
+import "./projects.css";
+import projectData from "./projects-data";
+import Project from "./project";
+import { motion } from "framer-motion";
 
 const animationStages = {
     hidden:{
@@ -21,6 +21,23 @@ const animationStages = {
 export default function Projects(){
     const navigate = useNavigate()
 
+    const projectsList = projectData.map((project,index) =>
+            <Project
+                img1={project.img1}
+                img2={project.img2}
+                img3={project.img3}
+                img4={project.img4}
+                title={project.title}
+                description={project.description}
+                tech={project.tech}
+                website={project.website}
+                github={project.github}
+                imgOrder={index % 2 === 0 ? "last" : "first"}
+                needHr = {index !== (projectData.length - 1)}
+                key={index}
+            />
+        )
+
     return(
         <motion.div className="projects"
             variants={animationStages}
@@ -28,51 +45,21 @@ export default function Projects(){
             animate="show"
         >
             <Container>
-                <Row>
+                <Row className="projects-headline-row">
                     <Col>
                         <h1 className="projects-title">PROJECTS</h1>
                     </Col>
+                    <Col className="home-button-col">
+                        <Button
+                            className="home-button"
+                            variant="outline-light"
+                            onClick={()=>{navigate(-1)}}
+                        >
+                            Home
+                        </Button>
+                    </Col>
                 </Row>   
-                <Project
-                    img1={DummyProject}
-                    img2={DummyProject}
-                    img3={DummyProject}
-                    title="Project 1"
-                    description="project 1 description project 1 description project 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description project 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description"
-                />
-                <hr/>
-                <Project
-                    img1={DummyProject}
-                    img2={DummyProject}
-                    img3={DummyProject}
-                    imgOrder="last"
-                    title="Project 2"
-                    description="project 1 description project 1 description project 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description project 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description"
-                />
-                <hr/>
-                <Project
-                    img1={DummyProject}
-                    img2={DummyProject}
-                    img3={DummyProject}
-                    title="Project 3"
-                    description="project 1 description project 1 description project 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description project 1 description
-                    project 1 descriptionproject 1 descriptionproject 1 description"
-                />      
-                <Button
-                    className="gobackbutton"
-                    variant="outline-light"
-                    onClick={()=>{navigate(-1)}}
-                >
-                    Back
-                </Button>
+                {projectsList}
             </Container>
         </motion.div>
     )

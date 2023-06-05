@@ -1,33 +1,127 @@
+.projects-headline-row{
+    display: flex;
+    align-items: center;
+}
+
 .projects-title{
     font-size: 3rem;
 }
 
 .project-title{
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .project{
-    margin-top:3rem;
-    margin-bottom:3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .project-carousel{
-    margin-bottom:1.5rem;
+    margin-bottom: 1.5rem;
     cursor: pointer;
 }
 
+.carousel-inner{
+    border-radius: 5px;
+}
+
+.main-carousel-image:hover{
+    transform: scale(1.1);
+}
+
 .project-description{
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .project-buttons{
-    gap:10px;
+    gap: 10px;
 }
 
-.gobackbutton{
-    margin-top:1rem;
+.home-button-col{
+    display: flex;
+    justify-content: flex-end;
 }
 
-.modal-content{
-    color:black
+.home-button{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.home-button::before{
+    content: "";
+    background-image: url("../../images/back-white.png");
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    margin-right: 5px;
+    transition: 0.2s; 
+}
+
+.home-button:hover::before{
+    background-image: url("../../images/back.png");
+}
+
+.tools-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tools{
+    cursor: default;
+    vertical-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom:5px;
+    padding: 3px;
+    padding-inline: 5px;
+}
+
+.modal{
+    color: black;
+}
+
+.modal-project-carousel{
+    margin-bottom: 10px;
+}
+
+.live-button, .code-button, .modal-live-button, .modal-code-button{
+    display: flex;
+    align-items: center;
+}
+
+.live-button::after, .modal-live-button::after{
+    content: "";
+    background-image: url("../../images/view-white.png");
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    margin-left: 5px;
+    transition: 0.2s; 
+}
+
+.live-button:hover::after{
+    background-image: url("../../images/view.png"); 
+}
+
+.code-button::after, .modal-code-button::after{
+    content: "";
+    background-image: url("../../images/github-white.png");
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    margin-left: 5px;
+    transition: 0.2s; 
+}
+
+.code-button:hover::after{
+    background-image: url("../../images/github.png"); 
 }
