@@ -1,75 +1,76 @@
-import React , { useState } from "react"
-import { Row , Col } from "react-bootstrap"
-import Modal from "react-bootstrap/Modal"
-import Button from "react-bootstrap/Button"
-import Carousel from "react-bootstrap/Carousel"
+import React , { useState } from "react";
+import { Row , Col } from "react-bootstrap";
+import ModalBox from "./modal";
+import Button from "react-bootstrap/Button";
+import Carousel from "react-bootstrap/Carousel";
 
-export default function Project({ img1 , img2 , img3 , imgOrder , title , description }){
-
+export default function Project({ img1 , img2 , img3 , imgOrder , title , description , tech , website , github , needHr }){
+   
     const [show, setShow] = useState(false);
-
+    const handleShow = () => { if (window.innerWidth >= 768) { setShow(true) } };
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const toolsUsed = tech.map((tool,index)=>
+        <span className="tools" key={index}>{tool}</span>
+    )
 
     return(
-    <Row className="project">
-        <Col md={{span:6, order:imgOrder || "first"}} lg="4">
-            
-            <Carousel className="project-carousel">
-                <Carousel.Item className="carousel-project-image" onClick={handleShow}>
-                    <img
-                        className="d-block w-100"
-                        src={img1}
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item onClick={handleShow}>
-                    <img
-                        className="d-block w-100"
-                        src={img2}
-                        alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item onClick={handleShow}>
-                    <img
-                        className="d-block w-100"
-                        src={img3}
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-            </Carousel>
-        </Col>
-        <Col>
-            <Row>
-                <h4 className="project-title">{title}</h4>
-            </Row>
-            <Row className="project-description">               
-                <p>
-                    {description}
-                </p> 
-            </Row>
-            <Row>
-                <Col className="d-flex project-buttons">
-                    <Button variant="outline-light" className="btn" size="sm">Visit</Button>
-                    <Button variant="outline-light" className="btn" size="sm">GitHub</Button>
+        <>
+            <Row className="project">
+                <Col md={{span:6, order:imgOrder}} lg="4">
+                    <Carousel className="project-carousel">
+                        <Carousel.Item className="carousel-project-image main-carousel-image" onClick={handleShow} interval={15000}>
+                            <img
+                                className="d-block w-100"
+                                src={img1}
+                                alt="First slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item className="carousel-project-image main-carousel-image" onClick={handleShow} interval={15000}>
+                            <img
+                                className="d-block w-100"
+                                src={img2}
+                                alt="Second slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item className="carousel-project-image main-carousel-image" onClick={handleShow} interval={15000}>
+                            <img
+                                className="d-block w-100"
+                                src={img3}
+                                alt="Third slide"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
-            </Row>
-        </Col>
-
-        <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-                <Modal.Title>{title}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>{description}</Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Visit website
-                </Button>
-            </Modal.Footer>
-      </Modal>
-    </Row> 
+                <Col>
+                    <Row>
+                        <h4 className="project-title">{title}</h4>
+                    </Row>
+                    <Row className="project-description">               
+                        <p>
+                            {description}
+                        </p>
+                        <p>Tools Used:</p>
+                        <div className="tools-div">{toolsUsed}</div>
+                    </Row>
+                    <Row>
+                        <Col className="d-flex project-buttons">
+                            <Button variant="outline-light" className="btn live-button" size="sm" href={website} target="_blank">Live Website</Button>
+                            <Button variant="outline-light" className="btn code-button" size="sm" href={github} target="_blank">Source Code</Button>
+                        </Col>
+                    </Row>
+                </Col>
+                <ModalBox
+                    title={title}
+                    show={show}
+                    handleClose={handleClose}
+                    img1={img1}
+                    img2={img2}
+                    img3={img3}
+                    website={website}
+                    github={github}
+                />
+            </Row> 
+        {needHr ? <hr /> : null}
+    </>
     )
 }
