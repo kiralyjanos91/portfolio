@@ -44,15 +44,26 @@ export default function Main(){
             <Container
                 className = "main-container"
             >
-                <Row>
-                    <h1 className="name">JANOS KIRALY <span className = "dev">/Frontend Developer/</span></h1>
+                <Row
+                    className = "name-row"
+                >
+                    <Col
+                        className = "name-col"
+                    >
+                        <h1 className="name">JANOS KIRALY</h1>
+                    </Col>
+                    <Col
+                        className = "dev-col"
+                    >
+                        <h3 className = "dev">/Frontend Developer/</h3>
+                    </Col>
                 </Row>
                     <Row className="main-top-buttons">
                         <Col md="3">
                             <Button onClick={()=>{navigate("/projects")}} variant="outline-light">Projects</Button>                          
                         </Col>
                         <Col md="3">
-                            <Button variant="outline-light" className="resume-button" href="Janos_Kiraly_Resume.pdf" download>Resume</Button>                          
+                            <Button variant="outline-light" className="resume-button" href="https://janoskiralydev.s3.amazonaws.com/Janos_Kiraly_Resume.pdf" target="_blank">Resume</Button>                          
                         </Col>
                         <Col md="3">
                             <Button href="https://www.linkedin.com/in/j%C3%A1nos-kir%C3%A1ly-7219b01b2/" target="_blank" variant="outline-light">LinkedIn</Button>                          
@@ -64,9 +75,8 @@ export default function Main(){
                     <hr/>
                     <Row>
                         <p className="short-about">
-                            As a developer, I really enjoy learning and problem solving with code. My experience includes HTML5, CSS3, JavaScript ES6+, React, Redux, Bootstrap, Git and REST APIs.
-                            As a developer, I really enjoy learning and problem solving with code. My experience includes HTML5, CSS3, JavaScript ES6+, React, Redux, Bootstrap, Git and REST APIs.
-                            As a developer, I really enjoy learning and problem solving with code. My experience includes HTML5, CSS3, JavaScript ES6+, React, Redux, Bootstrap, Git and REST APIs.
+                            I am a front-end developer with a designer's eye, focused on solving problems. I have over 3 years of hands-on experience coding websites and web applications primarily using HTML, CSS, JavaScript, Bootstrap, React, Redux, Node, Express and Mongoose. I focus on conceptualizing ideas, simplifying code, and creating enjoyable experiences. 
+                            Continuous learning is truly a passion of mine and I’m always taking online courses and tutorials to keep up with new technologies, and industry trends.
                         </p>
                         <hr/>
                         <h4>Skills: {skillName}</h4>
