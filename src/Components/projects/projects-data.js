@@ -18,14 +18,9 @@ const projectData = [
         img3:groupyximg3,
         title:"Groupyx",
         description:
-            `A training schedule builder web application.
-            
-            Exercises come from an external API.
-            Exercises can be saved or added to the training plan where they are
-            additional rendering operations can be performed on them.
-            This information is stored in the local storage so that the saved exercises and the training plan
-            can be accessed later by the user.`,
-        tech:["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "React-Bootstrap", "Node.js" , "Express" , "Mongoose"],
+            `     
+            A web application designed to facilitate the arrangement and coordination of both physical and online activities, meetings, and events catering to individuals and communities with shared interests, hobbies, and professional backgrounds. This project is built on the MERN stack, which stands for MongoDB, Express, React, and Node.js. Users have the ability to create groups and events, search for other users, and send them private messages. The private messaging functionality utilizes socket.io`,
+        tech:["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "React-Bootstrap", "Node.js" , "Express" , "Socket.io" , "Mongoose"],
         website:"https://groupyx.netlify.app",
         github:"https://github.com/kiralyjanos91/groups"
     },
@@ -35,13 +30,8 @@ const projectData = [
         img3:workoplanimg3,
         title:"Workoplan",
         description:
-            `A training schedule builder web application.
-            
-            Exercises come from an external API.
-            Exercises can be saved or added to the training plan where they are
-            additional rendering operations can be performed on them.
-            This information is stored in the local storage so that the saved exercises and the training plan
-            can be accessed later by the user.`,
+            `
+            A web application for creating training schedules. The exercises are sourced from an external API and can be saved or added to the training plan. Additional rendering operations can be performed on the exercises within the training plan. The information is stored in local storage, allowing the user to access their saved exercises and training plan at a later time.`,
         tech:["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "React-Bootstrap", "REST API"],
         website:"https://workoplan.netlify.app",
         github:"https://github.com/kiralyjanos91/workoplan"

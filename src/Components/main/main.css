@@ -2,9 +2,24 @@
     justify-content: center;
 }
 
+.name-row {
+ display: flex;
+ align-items: flex-end;
+
+}
+
+.name-col {
+    max-width: fit-content;
+}
+
 .name{
     font-weight: 600;
     font-size: 4rem;
+    margin: 0px;
+}
+
+.dev-col {
+    max-width: fit-content;
 }
 
 .dev {
@@ -23,6 +38,10 @@
 .main-top-buttons > div{
     max-width: fit-content;
     padding: 5px;
+}
+
+.skills-icons {
+    row-gap: 10px;
 }
 
 .skills-icons > div{
