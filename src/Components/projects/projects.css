@@ -17,6 +17,14 @@
     margin-bottom: 3rem;
 }
 
+.rapid-link {
+    color: #0dcaf0
+}
+
+.guest-pass > p > span {
+    font-weight: 700;
+}
+
 .project-carousel{
     margin-bottom: 1.5rem;
     cursor: pointer;
