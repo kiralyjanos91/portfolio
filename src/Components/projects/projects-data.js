@@ -46,8 +46,7 @@ const projectData = [
         title:"Top100finest",
         rapidApiLink: "https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/",
         description:
-            `A React application that lists the 100 best movies ever made based on IMDB ratings.
-            The app retrieves data from an API that I created myself and deployed to Google Firebase. I also uploaded the API to the largest REST API marketplace, where it is currently one of the most popular ones. Link:
+            `A React application that showcases the top 100 movies of all time, based on IMDB ratings. The app fetches data from a REST API that I developed and deployed on Google Firebase. Furthermore, I submitted the API to the largest REST API marketplace, where it has since become one of the most popular ones. Link:
             `,
         tech:["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "React-Bootstrap" , "REST API" , "Node.js" , "Express" , "Google Firebase"],
         website:"https://top100finest.netlify.app/",
