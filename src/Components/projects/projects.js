@@ -29,12 +29,15 @@ export default function Projects(){
                 img4={project.img4}
                 title={project.title}
                 description={project.description}
+                description2={project.description2 || ""}
+                rapidApiLink={project.rapidApiLink || ""}
                 tech={project.tech}
                 website={project.website}
                 github={project.github}
                 imgOrder={index % 2 === 0 ? "last" : "first"}
                 needHr = {index !== (projectData.length - 1)}
                 key={index}
+                index = {index}
             />
         )
 

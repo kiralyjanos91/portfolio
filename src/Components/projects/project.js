@@ -4,7 +4,7 @@ import ModalBox from "./modal";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 
-export default function Project({ img1 , img2 , img3 , imgOrder , title , description , tech , website , github , needHr }){
+export default function Project({ img1 , img2 , img3 , imgOrder , title , index , description , description2 , rapidApiLink , tech , website , github , needHr }){
    
     const [show, setShow] = useState(false);
     const handleShow = () => { if (window.innerWidth >= 768) { setShow(true) } };
@@ -45,10 +45,41 @@ export default function Project({ img1 , img2 , img3 , imgOrder , title , descri
                     <Row>
                         <h4 className="project-title">{title}</h4>
                     </Row>
+                    { index === 0 &&
+
+                        <Row
+                            className = "guest-pass"
+                        >
+                            <p>
+                                Guest Username: <span>user001</span>
+                            </p>
+                            <p>
+                                Guest Password: <span>Password123</span>
+                            </p>
+                        </Row>
+                    }
                     <Row className="project-description">               
                         <p>
                             {description}
                         </p>
+                        { rapidApiLink &&
+                            <>
+                                <p>
+                                    <a 
+                                        href = "https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/" 
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="rapid-link"
+                                    >
+                                        {rapidApiLink}
+                                    </a>
+                                </p>
+                                <p>
+                                    {description2}
+                                </p>
+                            </>
+
+                        }
                         <p>Tools Used:</p>
                         <div className="tools-div">{toolsUsed}</div>
                     </Row>
