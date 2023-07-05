@@ -11,8 +11,6 @@ import topwalletsimg1 from "../../images/topwallets-img4.jpg"
 import topwalletsimg2 from "../../images/topwallets-img3.jpg"
 import topwalletsimg3 from "../../images/topwallets-img2.jpg"
 
-const rapidApi = "Link"
-
 const projectData = [
     {
         img1:groupyximg1,
