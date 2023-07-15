@@ -59,17 +59,20 @@ export default function Main(){
                     </Col>
                 </Row>
                     <Row className="main-top-buttons">
-                        <Col md="3">
+                        <Col md="2">
                             <Button onClick={()=>{navigate("/projects")}} variant="outline-light">Projects</Button>                          
                         </Col>
-                        <Col md="3">
+                        <Col md="2">
                             <Button variant="outline-light" className="resume-button" href="https://janoskiralydev.s3.amazonaws.com/Janos_Kiraly_Resume.pdf" target="_blank">Resume</Button>                          
                         </Col>
-                        <Col md="3">
+                        <Col md="2">
                             <Button href="https://www.linkedin.com/in/j%C3%A1nos-kir%C3%A1ly-7219b01b2/" target="_blank" variant="outline-light">LinkedIn</Button>                          
                         </Col>
-                        <Col md="3">
+                        <Col md="2">
                             <Button href="https://github.com/kiralyjanos91" target="_blank" variant="outline-light">GitHub</Button>                          
+                        </Col>
+                        <Col md="2">
+                            <Button href="https://rapidapi.com/organization/rapihub" target="_blank" variant="outline-light">RapidAPI</Button>                          
                         </Col>
                     </Row>
                     <hr/>
