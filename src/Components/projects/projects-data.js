@@ -49,20 +49,20 @@ const projectData = [
         website:"https://top100finest.netlify.app/",
         github:"https://github.com/kiralyjanos91/top100movies"
     },
-    {
-        img1:topwalletsimg1,
-        img2:topwalletsimg2,
-        img3:topwalletsimg3,
-        title:"Topwallets",
-        description:
-            `A React based application providing short reviews of the most popular crypto wallets.
+    // {
+    //     img1:topwalletsimg1,
+    //     img2:topwalletsimg2,
+    //     img3:topwalletsimg3,
+    //     title:"Topwallets",
+    //     description:
+    //         `A React based application providing short reviews of the most popular crypto wallets.
 
-            The coins sub-page calls current data of the most popular crypto coins from an external API are also displayed on graphs in one to three-day intervals.
-            The news sub-page of the app displays crypto news from another API.`,
-        tech:["HTML", "CSS", "JavaScript", "React", "React Router" , "React Bootstrap", "REST API"],
-        website:"https://topwallets.netlify.app/",
-        github:"https://github.com/kiralyjanos91/topwallets"
-    },
+    //         The coins sub-page calls current data of the most popular crypto coins from an external API are also displayed on graphs in one to three-day intervals.
+    //         The news sub-page of the app displays crypto news from another API.`,
+    //     tech:["HTML", "CSS", "JavaScript", "React", "React Router" , "React Bootstrap", "REST API"],
+    //     website:"https://topwallets.netlify.app/",
+    //     github:"https://github.com/kiralyjanos91/topwallets"
+    // },
 ]
 
 export default projectData
