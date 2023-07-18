@@ -21,7 +21,7 @@ const projectData = [
             `     
             A React-based web app for creating groups based on shared interests.
             The application is built on the MERN stack. It utilizes socket.io for real-time messaging. The group or profile images uploaded by users are stored on Amazon S3.`,
-        tech:["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "React-Bootstrap", "REST API" , "Node.js" , "Express" , "Socket.io" , "Mongoose" , "Amazon S3"],
+        tech:["HTML", "CSS", "JavaScript", "React", "Redux Toolkit", "React Router" , "React Bootstrap", "REST API" , "Node.js" , "Express" , "Socket.io" , "Mongoose" , "Amazon S3"],
         website:"https://groupyx.netlify.app",
         github:"https://github.com/kiralyjanos91/groups"
     },
@@ -33,7 +33,7 @@ const projectData = [
         description:
             `
             A React application for creating training schedules. The exercises are sourced from an external API and can be saved or added to the training plan. With all information stored in localStorage, access to saved exercises and training plans is readily available whenever needed.`,
-        tech:["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "React-Bootstrap", "REST API"],
+        tech:["HTML", "CSS", "JavaScript", "React", "Redux Toolkit", "React Router" , "React Bootstrap", "REST API"],
         website:"https://workoplan.netlify.app",
         github:"https://github.com/kiralyjanos91/workoplan"
     },
@@ -42,11 +42,10 @@ const projectData = [
         img2:top100finestimg2,
         img3:top100finestimg3,
         title:"Top100finest",
-        rapidApiLink: "https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/",
         description:
-            `A React application that showcases the top 100 movies of all time, based on IMDB ratings. The app fetches data from a REST API that I developed and deployed on Google Firebase. Furthermore, I submitted the API to the largest REST API marketplace, where it has since become one of the most popular ones. Link:
+            `A React application that showcases the top 100 movies of all time, based on IMDB ratings. The data of the movies comes from a self-developed REST API running on Google Firebase.
             `,
-        tech:["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "React-Bootstrap" , "REST API" , "Node.js" , "Express" , "Google Firebase"],
+        tech:["HTML", "CSS", "JavaScript", "React", "Redux Toolkit", "React Router" , "React Bootstrap" , "REST API" , "Node.js" , "Express" , "Google Firebase"],
         website:"https://top100finest.netlify.app/",
         github:"https://github.com/kiralyjanos91/top100movies"
     },
@@ -60,7 +59,7 @@ const projectData = [
 
             The coins sub-page calls current data of the most popular crypto coins from an external API are also displayed on graphs in one to three-day intervals.
             The news sub-page of the app displays crypto news from another API.`,
-        tech:["HTML", "CSS", "JavaScript", "React", "React-Bootstrap", "REST API"],
+        tech:["HTML", "CSS", "JavaScript", "React", "React Router" , "React Bootstrap", "REST API"],
         website:"https://topwallets.netlify.app/",
         github:"https://github.com/kiralyjanos91/topwallets"
     },
