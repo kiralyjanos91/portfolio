@@ -21,7 +21,7 @@ export const skillsData = [
         icon: css3Icon
     },
     {
-        name: "JavaScript", 
+        name: "JavaScript ES6+", 
         icon: javascriptIcon
     },
     {
