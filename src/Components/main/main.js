@@ -75,7 +75,7 @@ export default function Main(){
                     <hr/>
                     <Row>
                         <p className="short-about">
-                            I am a front-end developer with a designer's eye, focused on solving problems. I have over 3 years of hands-on experience coding websites and web applications primarily using HTML, CSS, JavaScript and React. I focus on conceptualizing ideas, simplifying code, and creating enjoyable experiences. 
+                            I am a frontend developer with a designer's eye, focused on solving problems. I have over 2 years of hands-on experience coding websites and web applications primarily using HTML, CSS, JavaScript and React. I focus on conceptualizing ideas, simplifying code, and creating enjoyable experiences. 
                             Continuous learning is truly a passion of mine and I’m always taking online courses and tutorials to keep up with new technologies, and industry trends.
                         </p>
                         <hr/>
