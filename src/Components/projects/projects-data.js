@@ -21,7 +21,7 @@ const projectData = [
             `     
             A React-based web app for creating groups based on shared interests.
             The application is built on the MERN stack. It utilizes socket.io for real-time messaging. The group or profile images uploaded by users are stored on Amazon S3.`,
-        tech:["HTML", "CSS", "JavaScript", "React", "Redux Toolkit", "React Router" , "React Bootstrap", "REST API" , "Node.js" , "Express" , "Socket.io" , "Mongoose" , "Amazon S3"],
+        tech:["HTML", "CSS", "JavaScript", "React", "Redux Toolkit", "React Router" , "React Bootstrap", "REST API" , "Node.js" , "Express" , "JWT" , "Socket.io" , "Mongoose" , "Amazon S3"],
         website:"https://groupyx.netlify.app",
         github:"https://github.com/kiralyjanos91/groups"
     },
